@@ -1,0 +1,13 @@
+{
+  "name": "@acme/tsconfig",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Acme's TypeScript configuration",
+  "license": "MIT",
+  "author": "Ahmed Elsakaan",
+  "files": [
+    "./base.json",
+    "./nextjs.json",
+    "./react.json"
+  ]
+}
