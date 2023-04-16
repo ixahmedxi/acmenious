@@ -1,3 +1,5 @@
+// @ts-check
+
 /** @typedef {import('@ianvs/prettier-plugin-sort-imports').PluginConfig} SortImportsConfig */
 /** @typedef {import('prettier').Config} PrettierConfig */
 

@@ -1,6 +1,0 @@
-{
-  // This file is used for root level type checking of configuration files
-  "extends": "@acme/tsconfig/base.json",
-  "include": ["**/*.ts", "**/*.tsx", "**/*.cjs"],
-  "exclude": ["node_modules"]
-}

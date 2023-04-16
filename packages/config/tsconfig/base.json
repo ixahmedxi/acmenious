@@ -13,7 +13,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    "verbatimModuleSyntax": true,
     "checkJs": true,
 
     "esModuleInterop": true,
@@ -27,7 +26,6 @@
     "resolveJsonModule": true,
     "incremental": true,
 
-    "moduleResolution": "bundler",
-    "noEmit": true
+    "moduleResolution": "nodenext"
   }
 }
