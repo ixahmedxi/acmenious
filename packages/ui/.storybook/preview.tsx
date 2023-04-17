@@ -1,3 +1,5 @@
+import './globals.css';
+import { withThemeByClassName } from '@storybook/addon-styling';
 import { type Preview } from '@storybook/react';
 
 const preview: Preview = {
@@ -10,6 +12,15 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: '',
+        dark: 'dark',
+      },
+      defaultTheme: 'light',
+    }),
+  ],
 };
 
 export default preview;

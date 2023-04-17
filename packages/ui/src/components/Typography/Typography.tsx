@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from 'react';
 
 export const Typography: FC<PropsWithChildren> = ({ children }) => {
-  return <p>{children}</p>;
+  return <p className="text-blue-500 dark:text-pink-500">{children}</p>;
 };
