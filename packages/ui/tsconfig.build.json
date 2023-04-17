@@ -10,5 +10,12 @@
     "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "src/**/*.spec.ts", "src/**/*.spec.tsx"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/*.stories.tsx",
+    "src/**/*.stories.ts"
+  ]
 }
