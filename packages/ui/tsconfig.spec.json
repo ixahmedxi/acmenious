@@ -4,6 +4,6 @@
     "composite": true,
     "types": ["vitest/globals"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "./vitest.setup.ts"],
   "exclude": ["node_modules", "dist"]
 }

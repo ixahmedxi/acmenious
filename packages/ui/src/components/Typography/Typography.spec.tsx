@@ -6,6 +6,6 @@ describe('Typography component', () => {
   it('should render the component', () => {
     render(<Typography>Hello World</Typography>);
 
-    expect(screen.getByText('Hello World')).toBeTruthy();
+    expect(screen.getByText('Hello World')).toBeInTheDocument();
   });
 });
