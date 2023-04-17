@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 html {
-  @apply bg-zinc-50 text-zinc-900;
-}
-
-html.dark {
-  @apply bg-zinc-900 text-zinc-50;
+  @apply bg-gray-1 text-gray-12;
 }

@@ -6,7 +6,11 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('windy-radix-palette'),
+    require('@tailwindcss/typography'),
+    require('windy-radix-typography'),
+  ],
 };
 
-export default config;
+module.exports = config;

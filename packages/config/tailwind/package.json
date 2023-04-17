@@ -5,17 +5,17 @@
   "description": "Tailwind config for Acme",
   "license": "MIT",
   "author": "Acme",
-  "type": "module",
-  "exports": {
-    ".": "./tailwind.js",
-    "./postcss.cjs": "./postcss.cjs"
-  },
+  "main": "./tailwind.js",
   "files": [
-    "./postcss.cjs"
+    "./postcss.js"
   ],
   "devDependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.22",
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.1",
+    "windy-radix-palette": "^0.6.0",
+    "windy-radix-typography": "^0.2.0"
   }
 }

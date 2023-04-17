@@ -1,10 +1,12 @@
-import acmePreset from '@acme/tailwind';
-
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
-  presets: [acmePreset],
+  presets: [require('@acme/tailwind')],
   darkMode: 'class',
+  theme: {
+    extend: {},
+  },
+  plugins: [],
 };
 
-export default config;
+module.exports = config;

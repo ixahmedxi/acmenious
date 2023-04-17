@@ -34,6 +34,12 @@ importers:
 
   packages/config/tailwind:
     devDependencies:
+      '@radix-ui/colors':
+        specifier: ^0.1.8
+        version: 0.1.8
+      '@tailwindcss/typography':
+        specifier: ^0.5.9
+        version: 0.5.9(tailwindcss@3.3.1)
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.14(postcss@8.4.22)
@@ -43,6 +49,12 @@ importers:
       tailwindcss:
         specifier: ^3.3.1
         version: 3.3.1(postcss@8.4.22)(ts-node@10.9.1)
+      windy-radix-palette:
+        specifier: ^0.6.0
+        version: 0.6.0(@radix-ui/colors@0.1.8)(tailwindcss@3.3.1)
+      windy-radix-typography:
+        specifier: ^0.2.0
+        version: 0.2.0(@tailwindcss/typography@0.5.9)(tailwindcss@3.3.1)
 
   packages/config/tsconfig: {}
 
@@ -1885,6 +1897,10 @@ packages:
       tslib: 2.5.0
     dev: true
 
+  /@radix-ui/colors@0.1.8:
+    resolution: {integrity: sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==}
+    dev: true
+
   /@rollup/pluginutils@4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
     engines: {node: '>= 8.0.0'}
@@ -2819,6 +2835,18 @@ packages:
       '@types/babel__core': 7.20.0
       '@types/express': 4.17.17
       file-system-cache: 2.0.2
+    dev: true
+
+  /@tailwindcss/typography@0.5.9(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.3.1(postcss@8.4.22)(ts-node@10.9.1)
     dev: true
 
   /@testing-library/dom@8.20.0:
@@ -5994,6 +6022,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+    dev: true
+
   /lodash.clone@4.5.0:
     resolution: {integrity: sha512-GhrVeweiTD6uTmmn5hV/lzgCQhccwReIVRLHp7LT4SopOjqEZ5BbX8b5WWEtAKasjmy8hR7ZPwsYlxRCku5odg==}
     dev: true
@@ -6004,6 +6036,14 @@ packages:
 
   /lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: true
+
+  /lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+    dev: true
+
+  /lodash.merge@4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
   /lodash@4.17.21:
@@ -6978,6 +7018,14 @@ packages:
     dependencies:
       postcss: 8.4.22
       postcss-selector-parser: 6.0.11
+    dev: true
+
+  /postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
     dev: true
 
   /postcss-selector-parser@6.0.11:
@@ -8828,6 +8876,26 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       string-width: 4.2.3
+    dev: true
+
+  /windy-radix-palette@0.6.0(@radix-ui/colors@0.1.8)(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-tXVX+HS94wmLjJwuXgDynyN8OSE7AsIRegDRms/6Jkmv+xTnko23TjNEpuveBah0FOZvtzpVhEMTSnj3jro5KA==}
+    peerDependencies:
+      '@radix-ui/colors': '>=0.1.0'
+      tailwindcss: '>=3.0.0'
+    dependencies:
+      '@radix-ui/colors': 0.1.8
+      tailwindcss: 3.3.1(postcss@8.4.22)(ts-node@10.9.1)
+    dev: true
+
+  /windy-radix-typography@0.2.0(@tailwindcss/typography@0.5.9)(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-WVlqwf0xEFXHNPYFXSgSyaN52yePUqKU5Q/IpCrFe8ELd98jJUWSXqXA/Mz312QjTIHoVecOCPejRrbzJ7fEdg==}
+    peerDependencies:
+      '@tailwindcss/typography': '>=0.1.0'
+      tailwindcss: '>=3.0.0'
+    dependencies:
+      '@tailwindcss/typography': 0.5.9(tailwindcss@3.3.1)
+      tailwindcss: 3.3.1(postcss@8.4.22)(ts-node@10.9.1)
     dev: true
 
   /word-wrap@1.2.3:
