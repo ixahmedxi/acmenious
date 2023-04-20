@@ -5,6 +5,9 @@
   "license": "MIT",
   "author": "Acme",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "build-storybook": "storybook build",
