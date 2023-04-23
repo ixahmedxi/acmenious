@@ -1,16 +1,15 @@
 // @ts-check
+import typography from '@tailwindcss/typography';
+import windyRadixPalette from 'windy-radix-palette';
+import windyRadixTypography from 'windy-radix-typography';
+
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
-  darkMode: 'class',
   theme: {
     extend: {},
   },
-  plugins: [
-    require('windy-radix-palette'),
-    require('@tailwindcss/typography'),
-    require('windy-radix-typography'),
-  ],
+  plugins: [windyRadixPalette, typography, windyRadixTypography],
 };
 
-module.exports = config;
+export default config;

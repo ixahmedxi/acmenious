@@ -1,9 +1,14 @@
+// @ts-check
+import acmeTailwind from '@acme/tailwind';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     '../../packages/ui/src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
-  presets: [require('@acme/tailwind')],
+  presets: [acmeTailwind],
 };
+
+export default config;

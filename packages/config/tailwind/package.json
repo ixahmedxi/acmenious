@@ -5,10 +5,11 @@
   "description": "Tailwind config for Acme",
   "license": "MIT",
   "author": "Acme",
-  "main": "./tailwind.js",
-  "files": [
-    "./postcss.js"
-  ],
+  "type": "module",
+  "exports": {
+    ".": "./tailwind.js",
+    "./postcss.cjs": "./postcss.cjs"
+  },
   "devDependencies": {
     "@radix-ui/colors": "^0.1.8",
     "@tailwindcss/typography": "^0.5.9",

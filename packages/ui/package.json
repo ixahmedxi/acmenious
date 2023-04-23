@@ -11,6 +11,7 @@
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "build-storybook": "storybook build",
+    "dev": "tsc -p tsconfig.build.json --watch",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
