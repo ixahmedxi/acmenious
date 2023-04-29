@@ -12,12 +12,12 @@
   "devDependencies": {
     "@acme/tsconfig": "workspace:^",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
-    "@types/node": "^18.15.11",
+    "@types/node": "^18.16.2",
     "@types/prettier": "^2.7.2",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "prettier-plugin-jsdoc": "^0.4.2",
     "prettier-plugin-packagejson": "^2.4.3",
-    "prettier-plugin-tailwindcss": "^0.2.7",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
   },
